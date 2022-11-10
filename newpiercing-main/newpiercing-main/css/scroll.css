@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 1em sans-serif;
+  text-align: center;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-style: oblique;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#header {
+  background-color: blueviolet;
+  padding: 60px;
+  text-align: center;
+}
+
+#subheader {
+  background-color: rgb(237, 201, 231);
+  padding: 30px;
+
+}
+
+#content {
+  text-align: left
+}
+
+.footer {
+  padding: 30px;
+  background-color: rgb(183, 142, 221);
+}
+
+.row {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img.scale {
+  width: 100%;
+  height: auto;
+  border: 5px dashed plum;
+}
+
+/* Responsive layout - makes the one column stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column {
+    min-width: 50%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - makes a two equal column-layout instead of four columns */
+@media screen and (max-width: 500px) {
+  .column {
+    flex-direction: column;
+    max-width: 50%;
+  }
+}
+
+/*.column {
+  background-color: blueviolet;
+  margin-left: auto;
+  margin-right: auto;
+}*/
